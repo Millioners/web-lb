@@ -1,12 +1,84 @@
-<!DOCTYPE html> 
-<html lang="uk"> 
-<head> 
-<meta charset="UTF-8" /> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-<title>Лабораторна 1</title> 
-</head> 
-<body> 
-<p>Студент: Фесенко Владислав</p> 
-<p>Група: 6.1213-2пі</p> 
-</body> 
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Головна сторінка навчального лендінгу"/>
+    <title>Лабораторна 3 - Головна</title>
+    <link rel="icon" href="assets/images/Settings.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+    <a class="skip-link" href="#main">Перейти до основного контенту</a>
+    
+    <header class="header">
+        <h1 class="header__title">Мій лендінг студента</h1>
+        <nav class="navigation" aria-label="Головна навігація">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link navigation__link--current" href="index.html" aria-current="page">Головна</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="about.html">Про мене</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="contacts.html">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main" id="main">
+        <article class="article">
+            <h2 class="article__title">Новина дня</h2>
+            <p class="article__text">Студент Фесенко Владислав Юрійович розпочав роботу над лабораторною №3.</p>
+            <figure class="media article__media media--framed">
+                <img class="media__image" src="assets/images/my.jpg" alt="Фото студента за роботою">
+                <figcaption class="media__caption">Студент працює над веб-проектом</figcaption>
+            </figure>
+        </article>
+        
+        <section class="services" aria-labelledby="services-heading">
+            <h3 class="services__title" id="services-heading">Переваги навчання</h3>
+            <table class="services__table">
+                <tr class="services__row">
+                    <th class="services__header" scope="col">Перевага</th>
+                    <th class="services__header" scope="col">Опис</th>
+                </tr>
+                <tr class="services__row">
+                    <td class="services__cell">Сучасні технології</td>
+                    <td class="services__cell">Вивчення актуальних технологій веб-розробки</td>
+                </tr>
+                <tr class="services__row">
+                    <td class="services__cell">Практичні навички</td>
+                    <td class="services__cell">Багато практичних завдань та проектів</td>
+                </tr>
+                <tr class="services__row">
+                    <td class="services__cell">Досвідчені викладачі</td>
+                    <td class="services__cell">Викладання від практикуючих спеціалістів</td>
+                </tr>
+            </table>
+        </section>
+        
+        <aside class="sidebar sidebar--links">
+            <h3 class="sidebar__title">Корисні посилання</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </li>
+            </ul>
+        </aside>
+    </main>
+    
+    <footer class="footer">
+        <p class="footer__text">Студент: Фесенко Владислав</p>
+        <p class="footer__text">&copy; 2024 Група: 6.1213-2пі</p>
+    </footer>
+</body>
 </html>

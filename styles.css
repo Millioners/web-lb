@@ -1,0 +1,432 @@
+/* ===== СТИЛІ ДЛЯ ЛАБОРАТОРНОЇ 3 ===== */
+
+/* Змінні CSS */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --border-color: #ddd;
+    --shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --border-radius: 8px;
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+}
+
+/* Глобальні стилі */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--light-bg);
+    width: 100%;
+
+}
+
+
+
+/* Стилі для пропуску до основного контенту */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 0 0 4px 0;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Стилі для header */
+.header {
+    background: #4a6491;
+    color: white;
+    width: 100%;
+    padding: var(--spacing-large);
+    
+}
+
+.header__title {
+    text-align: center;
+    margin-bottom: var(--spacing-medium);
+    font-size: 2.5rem;
+}
+
+/* Стилі для навігації */
+.navigation__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    margin-top: var(--spacing-medium);
+}
+
+.navigation__link {
+    color: white;
+    text-decoration: none;
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.navigation__link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.navigation__link--current {
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+}
+
+/* Стилі для основного контенту */
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-medium);
+    margin-bottom: var(--spacing-large);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стилі для статті */
+.article {
+    background: white;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    grid-column: 1;
+}
+
+.article__title {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: var(--spacing-small);
+}
+
+.article__text {
+    margin-bottom: var(--spacing-medium);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Стилі для медіа блоку */
+.media {
+    margin: var(--spacing-medium) 0;
+}
+
+.media--framed {
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-small);
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.media__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: calc(var(--border-radius) - 2px);
+}
+
+.media__caption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: var(--spacing-small);
+    padding: var(--spacing-small);
+}
+
+/* Стилі для блоку послуг */
+.services {
+    background: white;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    grid-column: 1;
+}
+
+.services__title {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+    font-size: 1.5rem;
+}
+
+.services__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-medium);
+}
+
+.services__header {
+    background: var(--primary-color);
+    color: white;
+    padding: var(--spacing-medium);
+    text-align: left;
+    border: 1px solid var(--border-color);
+}
+
+.services__row:nth-child(even) {
+    background: var(--light-bg);
+}
+
+.services__cell {
+    padding: var(--spacing-medium);
+    border: 1px solid var(--border-color);
+}
+
+/* Стилі для бічної панелі */
+.sidebar {
+    background: white;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.sidebar__title {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: var(--spacing-small);
+}
+
+.sidebar__list {
+    list-style: none;
+}
+
+.sidebar__item {
+    margin-bottom: var(--spacing-small);
+    padding: var(--spacing-small) 0;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.sidebar__link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar__link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Модифікатори для sidebar */
+.sidebar--links .sidebar__item {
+    padding-left: 20px;
+    position: relative;
+}
+
+.sidebar--links .sidebar__item::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+.sidebar--values .sidebar__item::before {
+    content: "✓";
+    margin-right: 10px;
+    color: #27ae60;
+}
+
+.sidebar--social .sidebar__link {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+/* Стилі для блоку about */
+.about-article {
+    background: white;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: var(--spacing-medium);
+}
+
+.about-article__title {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+.about-article__text {
+    margin-bottom: var(--spacing-small);
+    font-size: 1.1rem;
+}
+
+/* Стилі для блоку навичок */
+.skills {
+    background: white;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+}
+
+.skills__title {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+.skills__list {
+    list-style: none;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-small);
+}
+
+.skills__item {
+    background: var(--light-bg);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: 20px;
+    border: 2px solid var(--secondary-color);
+    text-align: center;
+}
+
+
+/* Стилі для форми контактів */
+.main__title {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-large);
+    text-align: center;
+    font-size: 2rem;
+    grid-column: 1;
+}
+
+.contact-form {
+    background: white;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    grid-column: 1;
+}
+
+.contact-form__item {
+    margin-bottom: var(--spacing-medium);
+}
+
+.contact-form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.contact-form__input,
+.contact-form__textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.contact-form__input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: var(--accent-color);
+}
+
+.contact-form__button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.contact-form__button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Стилі для підвалу */
+.footer {
+    background: var(--primary-color);
+    color: white;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    margin-top: var(--spacing-large);
+    text-align: center;
+}
+
+.footer__contacts {
+    margin-bottom: var(--spacing-medium);
+    padding-bottom: var(--spacing-medium);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer__text {
+    margin-bottom: var(--spacing-small);
+    opacity: 0.9;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    .navigation__list {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .header__title {
+        font-size: 2rem;
+    }
+    
+    body {
+        padding: var(--spacing-small);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills__list {
+        grid-template-columns: 1fr;
+    }
+    
+    .header__title {
+        font-size: 1.5rem;
+    }
+    
+    .main__title {
+        font-size: 1.5rem;
+    }
+}
