@@ -1,99 +1,122 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Контактна сторінка"/>
-    <title>Лабораторна 3 - Контакти</title>
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна №4 - Контакти</title>
+    <link rel="icon" href="assets/images/Settings.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page">
-    <a class="skip-link" href="#main">Перейти до основного контенту</a>
-    
-    <header class="header">
-        <h1 class="header__title">Контакти</h1>
-        <nav class="navigation" aria-label="Головна навігація">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a class="navigation__link" href="index.html">Головна</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="about.html">Про мене</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link navigation__link--current" href="contacts.html" aria-current="page">Контакти</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main class="main" id="main">
-        <h2 class="main__title">Зв'яжіться зі мною</h2>
-        
-        <form class="contact-form" action="#">
-            <div class="contact-form__item">
-                <label class="contact-form__label" for="name">Ім'я:</label>
-                <input class="contact-form__input" type="text" id="name" name="name" 
-                       placeholder="Введіть ваше ім'я"
-                       required
-                       minlength="2"
-                       maxlength="50"
-                       pattern="[A-Za-zА-Яа-яЇїІіЄєҐґ'\- ]+"
-                       title="Дозволені українські та англійські літери, пробіл, тире та апостроф">
-            </div>
+<body>
+    <div class="layout">
+        <!-- HEADER -->
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Головна</a>
+                <a href="about.html" class="nav__link">Про нас</a>
+                <a href="contacts.html" class="nav__link nav__link--cta">Контакти</a>
+            </nav>
+        </header>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <section class="sidebar-section">
+                <h3>Кормой послания</h3>
+                <p>MDN WebDocs</p>
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">Google</a>
+            </section>
             
-            <div class="contact-form__item">
-                <label class="contact-form__label" for="email">Email:</label>
-                <input class="contact-form__input" type="email" id="email" name="email" 
-                       placeholder="example@domain.com"
-                       required>
-            </div>
+            <section class="sidebar-section">
+                <h3>Цінності</h3>
+                <ul class="values-list">
+                    <li>Якість коду та процесів</li>
+                    <li>Навчання через практику</li>
+                    <li>Комунікація та підтримка</li>
+                </ul>
+            </section>
             
-            <div class="contact-form__item">
-                <label class="contact-form__label" for="phone">Телефон:</label>
-                <input class="contact-form__input" type="tel" id="phone" name="phone"
-                       placeholder="+380 XX XXX XX XX"
-                       pattern="\+380[0-9]{9}"
-                       title="Введіть номер у форматі +380XXXXXXXXX">
-            </div>
-            
-            <div class="contact-form__item">
-                <label class="contact-form__label" for="message">Повідомлення:</label>
-                <textarea class="contact-form__textarea" id="message" name="message" 
-                          rows="5" 
-                          placeholder="Введіть ваше повідомлення..."
-                          maxlength="500"></textarea>
-            </div>
-            
-            <div class="contact-form__item">
-                <button class="contact-form__button" type="submit">Надіслати</button>
-            </div>
-        </form>
-        
-        <aside class="sidebar sidebar--social">
-            <h3 class="sidebar__title">Соціальні мережі</h3>
-            <ul class="sidebar__list">
-                <li class="sidebar__item">
-                    <a class="sidebar__link" href="https://www.facebook.com/share/1Cn3uCjLv3/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link" href="https://www.instagram.com/ss.vlados?igsh=MXI5ZDFsNGI3eWR0ag%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
-                </li>
-                <li class="sidebar__link" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </li>
-            </ul>
+            <section class="sidebar-section">
+                <h3>Соціальні мережі</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1Cn3uCjLv3/?mibextid=wwXIfr" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/ss.vlados?igsh=MXI5ZDFsNGI3eWR0ag%3D%3D&utm_source=qr" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </section>
         </aside>
-    </main>
-    
-    <footer class="footer">
-        <div class="footer__contacts">
-            <p class="footer__text"><strong>Email:</strong> fvlad0060@gmail.com</p>
-            <p class="footer__text"><strong>Телефон:</strong> +380 ХХ ХХХ ХХХХ</p>
-            <p class="footer__text"><strong>Адреса:</strong> м. Запоріжжя</p>
-        </div>
-        <p class="footer__text">Студент: Фесенко Владислав</p>
-        <p class="footer__text">&copy; 2024 Група: 6.1213-2пі</p>
-    </footer>
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+            <section class="contact-section">
+                <h2>Зв'яжіться з нами</h2>
+                
+                <form class="contact-form" action="#">
+                    <div class="contact-form__item">
+                        <label class="contact-form__label" for="name">Ім'я:</label>
+                        <input class="contact-form__input" type="text" id="name" name="name" 
+                               placeholder="Введіть ваше ім'я"
+                               required
+                               minlength="2"
+                               maxlength="50"
+                               pattern="[A-Za-zА-Яа-яЇїІіЄєҐґ'\- ]+"
+                               title="Дозволені українські та англійські літери, пробіл, тире та апостроф">
+                    </div>
+                    
+                    <div class="contact-form__item">
+                        <label class="contact-form__label" for="email">Email:</label>
+                        <input class="contact-form__input" type="email" id="email" name="email" 
+                               placeholder="example@domain.com"
+                               required>
+                    </div>
+                    
+                    <div class="contact-form__item">
+                        <label class="contact-form__label" for="phone">Телефон:</label>
+                        <input class="contact-form__input" type="tel" id="phone" name="phone"
+                               placeholder="+380 XX XXX XX XX"
+                               pattern="\+380[0-9]{9}"
+                               title="Введіть номер у форматі +380XXXXXXXXX">
+                    </div>
+                    
+                    <div class="contact-form__item">
+                        <label class="contact-form__label" for="message">Повідомлення:</label>
+                        <textarea class="contact-form__textarea" id="message" name="message" 
+                                  rows="5" 
+                                  placeholder="Введіть ваше повідомлення..."
+                                  maxlength="500"></textarea>
+                    </div>
+                    
+                    <div class="contact-form__item">
+                        <button class="contact-form__button" type="submit">Надіслати</button>
+                    </div>
+                </form>
+                
+                <div class="contact-info">
+                    <h3>Контактна інформація</h3>
+                    <p><strong>Email:</strong> fvlad0060@gmail.com</p>
+                    <p><strong>Телефон:</strong> +380 ХХ ХХХ ХХХХ</p>
+                    <p><strong>Адреса:</strong> м. Запоріжжя</p>
+                    <p><strong>Студент:</strong> Фесенко Владислав Юрійович</p>
+                    <p><strong>Група:</strong> 6.1213-2пі</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer-section">
+                    <h4>Наші контакти</h4>
+                    <p>Email: fvlad0060@gmail.com</p>
+                    <p>Телефон: +380 ХХ ХХХ ХХХХ</p>
+                    <p>Адреса: м. Запоріжжя</p>
+                    <p>Студент: Фесенко Владислав</p>
+                </div>
+                
+                <div class="footer-section">
+                    <p>© 2024 Група: 6.1213-2пі</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

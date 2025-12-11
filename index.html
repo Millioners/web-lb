@@ -1,84 +1,111 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Головна сторінка навчального лендінгу"/>
-    <title>Лабораторна 3 - Головна</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна №4 - Головна</title>
     <link rel="icon" href="assets/images/Settings.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page">
-    <a class="skip-link" href="#main">Перейти до основного контенту</a>
-    
-    <header class="header">
-        <h1 class="header__title">Мій лендінг студента</h1>
-        <nav class="navigation" aria-label="Головна навігація">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a class="navigation__link navigation__link--current" href="index.html" aria-current="page">Головна</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="about.html">Про мене</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="contacts.html">Контакти</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main class="main" id="main">
-        <article class="article">
-            <h2 class="article__title">Новина дня</h2>
-            <p class="article__text">Студент Фесенко Владислав Юрійович розпочав роботу над лабораторною №3.</p>
-            <figure class="media article__media media--framed">
-                <img class="media__image" src="assets/images/my.jpg" alt="Фото студента за роботою">
-                <figcaption class="media__caption">Студент працює над веб-проектом</figcaption>
-            </figure>
-        </article>
-        
-        <section class="services" aria-labelledby="services-heading">
-            <h3 class="services__title" id="services-heading">Переваги навчання</h3>
-            <table class="services__table">
-                <tr class="services__row">
-                    <th class="services__header" scope="col">Перевага</th>
-                    <th class="services__header" scope="col">Опис</th>
-                </tr>
-                <tr class="services__row">
-                    <td class="services__cell">Сучасні технології</td>
-                    <td class="services__cell">Вивчення актуальних технологій веб-розробки</td>
-                </tr>
-                <tr class="services__row">
-                    <td class="services__cell">Практичні навички</td>
-                    <td class="services__cell">Багато практичних завдань та проектів</td>
-                </tr>
-                <tr class="services__row">
-                    <td class="services__cell">Досвідчені викладачі</td>
-                    <td class="services__cell">Викладання від практикуючих спеціалістів</td>
-                </tr>
-            </table>
-        </section>
-        
-        <aside class="sidebar sidebar--links">
-            <h3 class="sidebar__title">Корисні посилання</h3>
-            <ul class="sidebar__list">
-                <li class="sidebar__item">
-                    <a class="sidebar__link" href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link" href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools</a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </li>
-            </ul>
+<body>
+    <div class="layout">
+        <!-- HEADER -->
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Головна</a>
+                <a href="about.html" class="nav__link">Про нас</a>
+                <a href="contacts.html" class="nav__link nav__link--cta">Контакти</a>
+            </nav>
+        </header>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <section class="sidebar-section">
+                <h3>Кормой послания</h3>
+                <p>МОНУМФ Docs</p>
+            </section>
+            
+            <section class="sidebar-section">
+                <h3>Цінності</h3>
+                <ul class="values-list">
+                    <li>Якість коду та процесів</li>
+                    <li>Навчання через практику</li>
+                    <li>Комунікація та підтримка</li>
+                </ul>
+            </section>
+            
+            <section class="sidebar-section">
+                <h3>Соціальні мережі</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </section>
         </aside>
-    </main>
-    
-    <footer class="footer">
-        <p class="footer__text">Студент: Фесенко Владислав</p>
-        <p class="footer__text">&copy; 2024 Група: 6.1213-2пі</p>
-    </footer>
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+            <section class="news-section">
+                <h2>Останні новини</h2>
+                <div class="news-grid">
+                    <!-- Новина 1 -->
+                    <article class="news-card">
+                        <figure class="news-image">
+                             <img src="assets/images/1.jpg" alt="Старт веб-проєкту">
+                        </figure>
+                        <h3>Старт навчального веб-проєкту</h3>
+                        <p>Група розпочинає роботу над веб-проєктом, який охопить HTML, CSS, JS та React. Практичне навчання з реальними проектами.</p>
+                        <div class="news-meta">
+                            <span class="news-date">18-бер 2025</span>
+                            <a href="#" class="news-link">Читати далі</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Новина 2 -->
+                    <article class="news-card">
+                        <figure class="news-image">
+                             <img src="assets/images/2.png" alt="Flexbox та Grid">
+                        </figure>
+                        <h3>Flexbox + Grid практика</h3>
+                        <p>На четвертій лекції розберемо однокомірний та двокомірний layout з практикою. Практичні завдання для кращого засвоєння.</p>
+                        <div class="news-meta">
+                            <span class="news-date">12-бер 2025</span>
+                            <a href="#" class="news-link">Читати далі</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Новина 3 -->
+                    <article class="news-card">
+                        <figure class="news-image">
+                             <img src="assets/images/3.png" alt="React навчання">
+                        </figure>
+                        <h3>React - вивчення основ</h3>
+                        <p>Заплановано вивчення основ React: компоненти, стан, props. Створення першого React-додатку.</p>
+                        <div class="news-meta">
+                            <span class="news-date">15-бер 2025</span>
+                            <a href="#" class="news-link">Читати далі</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer-section">
+                    <h4>Наші контакти</h4>
+                    <p>Email: fvlad0060@gmail.com</p>
+                    <p>Телефон: +380 XX XXX XXXX</p>
+                    <p>Адреса: м. Запоріжжя</p>
+                </div>
+                
+                <div class="footer-section">
+                    <p>© 2025 Група: 6.1213-2пі</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
