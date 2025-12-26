@@ -52,7 +52,17 @@
                     <!-- Новина 1 -->
                     <article class="news-card">
                         <figure class="news-image">
-                             <img src="assets/images/1.jpg" alt="Старт веб-проєкту">
+                            <picture>
+                                <!-- WebP формат (краща стиснення) -->
+                                <source 
+                                    srcset="assets/images/1.webp" 
+                                    type="image/webp">
+                                <!-- Оригінальний JPEG fallback -->
+                                <img 
+                                    src="assets/images/1.jpg" 
+                                    alt="Старт веб-проєкту"
+                                    loading="lazy">
+                            </picture>
                         </figure>
                         <h3>Старт навчального веб-проєкту</h3>
                         <p>Група розпочинає роботу над веб-проєктом, який охопить HTML, CSS, JS та React. Практичне навчання з реальними проектами.</p>
@@ -65,7 +75,17 @@
                     <!-- Новина 2 -->
                     <article class="news-card">
                         <figure class="news-image">
-                             <img src="assets/images/2.png" alt="Flexbox та Grid">
+                            <picture>
+                                <!-- WebP формат (краща стиснення) -->
+                                <source 
+                                    srcset="assets/images/2.webp" 
+                                    type="image/webp">
+                                <!-- Оригінальний PNG fallback -->
+                                <img 
+                                    src="assets/images/2.png" 
+                                    alt="Flexbox та Grid"
+                                    loading="lazy">
+                            </picture>
                         </figure>
                         <h3>Flexbox + Grid практика</h3>
                         <p>На четвертій лекції розберемо однокомірний та двокомірний layout з практикою. Практичні завдання для кращого засвоєння.</p>
@@ -78,7 +98,17 @@
                     <!-- Новина 3 -->
                     <article class="news-card">
                         <figure class="news-image">
-                             <img src="assets/images/3.png" alt="React навчання">
+                            <picture>
+                                <!-- WebP формат (краща стиснення) -->
+                                <source 
+                                    srcset="assets/images/3.webp" 
+                                    type="image/webp">
+                                <!-- Оригінальний PNG fallback -->
+                                <img 
+                                    src="assets/images/3.png" 
+                                    alt="React навчання"
+                                    loading="lazy">
+                            </picture>
                         </figure>
                         <h3>React - вивчення основ</h3>
                         <p>Заплановано вивчення основ React: компоненти, стан, props. Створення першого React-додатку.</p>
