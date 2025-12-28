@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна №4 - Головна</title>
+    <link rel="icon" href="/assets/Settings-Dnhfg6dT.ico" type="image/x-icon">
+    <title>Vite + SCSS</title>
+  <script type="module" crossorigin src="/assets/index-DGjwCOzm.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-B30c4kSP.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- HEADER -->
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Головна</a>
+                <a href="about.html" class="nav__link">Про нас</a>
+                <a href="contacts.html" class="nav__link nav__link--cta">Контакти</a>
+            </nav>
+        </header>
+
+      
+        <aside class="sidebar">
+            <section class="sidebar-section">
+                <h3>Кормой послания</h3>
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a>
+            </section>
+            
+            <section class="sidebar-section">
+                <h3>Цінності</h3>
+                <ul class="values-list">
+                    <li>Якість коду та процесів</li>
+                    <li>Навчання через практику</li>
+                    <li>Комунікація та підтримка</li>
+                </ul>
+            </section>
+            
+            <section class="sidebar-section">
+                <h3>Соціальні мережі</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1Cn3uCjLv3/?mibextid=wwXIfr" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/ss.vlados?igsh=MXI5ZDFsNGI3eWR0ag%3D%3D&utm_source=qr" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </section>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+            <section class="news-section">
+                <h2>Останні новини</h2>
+                <div class="news-grid">
+                    <!-- Новина 1 -->
+                    <article class="news-card">
+                        <figure class="news-image">
+                            <picture>
+                                <!-- WebP формат (краща стиснення) -->
+                                <source type="image/webp" srcset="/assets/web_fot-B9_YbkiJ.webp">
+                                <!-- Оригінальний JPEG fallback -->
+                                <img 
+                                    src="/assets/web_fot-NlmZEeWT.jpg" 
+                                    alt="Старт веб-проєкту"
+                                    class="media__img"
+                                    width="640" height="360"
+                                    loading="lazy" decoding="async" />
+                            </picture>
+                        </figure>
+                        <h3>Старт навчального веб-проєкту</h3>
+                        <p>Група розпочинає роботу над веб-проєктом, який охопить HTML, CSS, JS та React. Практичне навчання з реальними проектами.</p>
+                        <div class="news-meta">
+                            <span class="news-date">18-бер 2025</span>
+                            <a href="#" class="news-link">Читати далі</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Новина 2 -->
+                    <article class="news-card">
+                        <figure class="news-image">
+                            <picture>
+                                <!-- WebP формат (краща стиснення) -->
+                                <source type="image/webp" srcset="/assets/2-DGIoeBfx.webp">
+                                <!-- Оригінальний PNG fallback -->
+                                <img 
+                                    src="/assets/2-C2a5rUtK.png" 
+                                    alt="Flexbox та Grid"
+                                    class="media__img"
+                                    width="640" height="360"
+                                    loading="lazy" decoding="async" />
+                            </picture>
+                        </figure>
+                        <h3>Flexbox + Grid практика</h3>
+                        <p>На четвертій лекції розберемо однокомірний та двокомірний layout з практикою. Практичні завдання для кращого засвоєння.</p>
+                        <div class="news-meta">
+                            <span class="news-date">12-бер 2025</span>
+                            <a href="#" class="news-link">Читати далі</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Новина 3 -->
+                    <article class="news-card">
+                        <figure class="news-image">
+                            <picture>
+                                <!-- WebP формат (краща стиснення) -->
+                                <source type="image/webp" srcset="/assets/prog_fot-9QxIBpom.webp">
+                                <!-- Оригінальний PNG fallback -->
+                                <img 
+                                    src="assets/images/prog_fot.png" 
+                                    alt="React навчання"
+                                    class="media__img"
+                                    width="640" height="360"
+                                    loading="lazy" decoding="async" />
+                            </picture>
+                        </figure>
+                        <h3>React - вивчення основ</h3>
+                        <p>Заплановано вивчення основ React: компоненти, стан, props. Створення першого React-додатку.</p>
+                        <div class="news-meta">
+                            <span class="news-date">15-бер 2025</span>
+                            <a href="#" class="news-link">Читати далі</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer-section">
+                    <h4>Наші контакти</h4>
+                    <p>Email: fvlad0060@gmail.com</p>
+                    <p>Телефон: +380 XX XXX XXXX</p>
+                    <p>Адреса: м. Запоріжжя</p>
+                </div>
+                
+                <div class="footer-section">
+                    <p>© 2025 Група: 6.1213-2пі</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
