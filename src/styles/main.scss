@@ -646,3 +646,156 @@ h3 {
         padding: 20px;
     }
 }
+
+/* THEME TOGGLE BUTTON STYLES */
+#theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #333;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    min-width: 40px;
+    min-height: 40px;
+    flex-shrink: 0;
+    
+    &:hover {
+        background-color: #d0d0d0;
+        transform: scale(1.1);
+    }
+    
+    &:active {
+        transform: scale(0.95);
+    }
+    
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #007bff;
+    }
+}
+
+html.dark #theme-toggle {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+html.dark #theme-toggle:hover {
+    background-color: #444;
+}
+
+/* DAY ICON */
+#day-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+html.dark #day-icon {
+    display: none !important;
+}
+
+/* NIGHT ICON */
+#night-icon {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+html.dark #night-icon {
+    display: block !important;
+}
+
+/* DARK MODE STYLES */
+html.dark {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+html.dark body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+html.dark .layout {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+html.dark .header {
+    background-color: #0d47a1;
+    color: #e0e0e0;
+}
+
+html.dark .nav__link {
+    color: #e0e0e0;
+}
+
+html.dark .nav__link:hover {
+    color: #ffffff;
+}
+
+html.dark .sidebar {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+html.dark .sidebar-section h3 {
+    color: #ffffff;
+}
+
+html.dark .main {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+html.dark .footer {
+    background-color: #0d47a1;
+    color: #e0e0e0;
+}
+
+html.dark .news-card {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+
+html.dark .news-card h3 {
+    color: #ffffff;
+}
+
+html.dark .about-article {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+html.dark .skills {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+html.dark .employee-card {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+
+html.dark button {
+    background-color: #0d47a1;
+    color: #e0e0e0;
+}
+
+html.dark button:hover {
+    background-color: #1565c0;
+}

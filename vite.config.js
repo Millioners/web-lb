@@ -2,9 +2,10 @@ import { defineConfig } from "vite";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import handlebars from "vite-plugin-handlebars";
+import tailwindcss from '@tailwindcss/vite';
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = resolve(__filename)
+const __dirname = resolve(__filename, '..')
 
 export default defineConfig({
     plugins: [

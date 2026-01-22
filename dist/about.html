@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна №4 - Про нас</title>
+    <link rel="icon" href="assets/images/Settings.ico" type="image/x-icon">
+  <script type="module" crossorigin src="/assets/main-jndXzUgn.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BmnUKpC9.css">
+</head>
+<body data-page="about">
+    <div class="layout">
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="header__title">Лабораторна №8</h1>
+            <div class="flex justify-between items-center border border-solid border-[color:var(--border)] space-x-6 px-6">
+                <nav class="nav flex items-center space-x-4">
+                    <a href="index.html" class="nav__link">Головна</a>
+                    <a href="about.html" class="nav__link">Про нас</a>
+                    <a href="contacts.html" class="nav__link nav__link--cta">Контакти</a>
+                </nav>
+                <button id="theme-toggle" 
+                        class=" 
+                                p-2 rounded-full 
+                                bg-[color:var(--surface)] hover:bg-[color:var(--surface-alt)] 
+                                text-[color:var(--text)] hover:text-[color:var(--accent)] 
+                                transition duration-300 ease-in-out 
+                                focus:outline-none focus:ring-2 focus:ring-[color:var(--accent)] 
+                                cursor-pointer 
+                                flex items-center justify-center
+                            " 
+                        type="button" 
+                        aria-label="Переключити тему"> 
+
+                    <img id="day-icon" class="h-6 w-6 block dark:hidden" src="assets/images/Day.svg" alt="Денна тема">
+
+                    <img id="night-icon" class="h-6 w-6 hidden dark:block" src="assets/images/Night.svg" alt="Нічна тема">
+                </button> 
+            </div>
+        </header>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <section class="sidebar-section">
+                <h3>Кормой послания</h3>
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a>
+            </section>
+            
+            <section class="sidebar-section">
+                <h3>Цінності</h3>
+                <ul class="values-list">
+                    <li>Якість коду та процесів</li>
+                    <li>Навчання через практику</li>
+                    <li>Комунікація та підтримка</li>
+                </ul>
+            </section>
+            
+            <section class="sidebar-section">
+                <h3>Соціальні мережі</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1Cn3uCjLv3/?mibextid=wwXIfr" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/ss.vlados?igsh=MXI5ZDFsNGI3eWR0ag%3D%3D&utm_source=qr" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </section>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+            <section class="about-section">
+                <h2>Про мене</h2>
+                
+                <div class="about-article">
+                    <h3 class="about-article__title">Інформація про студента</h3>
+                    <div class="about-article__content">
+                        <p class="about-article__text"><strong>ПІБ:</strong> Фесенко Владислав Юрійович</p>
+                        <p class="about-article__text"><strong>Група:</strong> 6.1213-2пі</p>
+                        <p class="about-article__text"><strong>Спеціальність:</strong> Програмна інженерія</p>
+                        <p class="about-article__text"><strong>Курс:</strong> 3</p>
+                        <p class="about-article__text"><strong>Університет:</strong> Запорізький Національний Університет</p>
+                    </div>
+                </div>
+                
+                <div class="skills">
+                    <h3 class="skills__title">Навички</h3>
+                    <ul class="skills__list">
+                        <li class="skills__item">HTML5 & CSS3</li>
+                        <li class="skills__item">JavaScript (базовий)</li>
+                        <li class="skills__item">Git та GitHub</li>
+                        <li class="skills__item">Англійська мова (B1)</li>
+                        <li class="skills__item">Німецька мова (A2)</li>
+                    </ul>
+                </div>
+                
+                <div class="values">
+                    <h3>Мої цінності</h3>
+                    <ul class="values-list-main">
+                        <li>Навчання через практику</li>
+                        <li>Постійний розвиток</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="team">
+                <h2 class="team__title">Наша команда</h2>
+                
+                <div class="team__list"></div>
+
+                <template id="employee-card-tpl">
+                    <article class="card employee-card">
+                        <img class="employee-card__photo" alt="" width="320" height="240" loading="lazy">
+                        <div class="employee-card__body">
+                            <h3 class="employee-card__name"></h3>
+                            <p class="employee-card__role"></p>
+                            <a class="btn-brand employee-card__cta" href="#" target="_blank" rel="noopener noreferrer">Переглянути</a>
+                        </div>
+                    </article>
+                </template>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer-section">
+                    <h4>Наші контакти</h4>
+                    <p>Email: fvlad0060@gmail.com</p>
+                    <p>Телефон: +380 ХХ ХХХ ХХХХ</p>
+                    <p>Адреса: м. Запоріжжя</p>
+                    <p>Студент: Фесенко Владислав</p>
+                </div>
+                
+                <div class="footer-section">
+                    <p>© 2024 Група: 6.1213-2пі</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
